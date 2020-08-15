@@ -1,2 +1,14 @@
-#я незнаю как можно убрать пробелы в начале строк после первой, помогите пожалуйста
-print(*[str(a+1)+". "+i[:9]+"\n" for a,i in enumerate(input().split())])
+def my_func(x, y):
+    ib = x
+    for i in range(y - 1):
+        ib *= x
+    return ib
+
+
+def my_cheatin_func(x, y):
+    return x ** y
+
+
+a, b = int(input()), int(input())
+print(my_func(a, b))
+print(my_cheatin_func(a, b))

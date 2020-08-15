@@ -1,4 +1,4 @@
-a,b,c=1,"one",1.1
-e=[a,b,c]
-for i in e:
-    print(type(i))
+def hoho(a, b):
+    if b != 0:
+        return a / b
+print(hoho(int(input()), int(input())))
