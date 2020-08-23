@@ -1,14 +1,7 @@
-def my_func(x, y):
-    ib = x
-    for i in range(y - 1):
-        ib *= x
-    return ib
-
-
-def my_cheatin_func(x, y):
-    return x ** y
-
-
-a, b = int(input()), int(input())
-print(my_func(a, b))
-print(my_cheatin_func(a, b))
+with open('fill.txt', 'w') as fu:
+    with open('file.txt', 'r') as f:
+        kool = ["четыре", "три", "два", "один"]
+        for ln in f:
+            ln = ln.split()
+            ln[0] = kool.pop()
+            fu.write(" ".join(ln) + "\n")
