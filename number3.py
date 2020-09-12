@@ -1,6 +1,4 @@
-# мне не нравится этот вариант с созданием такого списка,надеюсь вы это увидите и сможете предложить изменения
-a, b = ["winter", "winter", "spring", "spring", "spring", "summer", "summer", "summer", "eminem's diss AKA Fall",
-        "eminem's diss AKA Fall", "eminem's diss AKA Fall", "winter"], {}
+a, b = ["winter", "spring", "summer", "eminem's diss AKA Fall"], {}
 for ai, i in enumerate(a):
-    b[str(ai + 1)] = str(i)
-print(b[input()])
+    b[ai] = str(i)
+print(b[int(input())%12//3])
