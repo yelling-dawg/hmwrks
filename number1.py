@@ -1,4 +1,3 @@
-def hoho(a, b):
-    if b != 0:
-        return a / b
-print(hoho(int(input()), int(input())))
+def hoehoe(a=100, b=120, c=5000):
+    return (a * b) + c
+print(hoehoe())

@@ -1,4 +1,2 @@
-def data(name, surname, birthyear, city_of_residence, email, number):
-    print("имя:", name, "\t", "фамилия:", surname, "\t", "год рождения:", birthyear, "\t", "город проживания:",
-          city_of_residence, "\t", "эл. почта: ", email, "\t", "номер телефона: ", number)
-data(input(), input(), input(), input(), input(), input())
+sls=[300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
+print(*[sls[i] for i in range(1,len(sls)) if sls[i]>sls[i-1]])

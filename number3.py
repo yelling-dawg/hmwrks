@@ -1,5 +1,1 @@
-def my_func(x,y,z):
-    t=[x,y,z]
-    t.remove(min(t))
-    return sum(t)
-print(my_func(int(input()),int(input()),int(input())))
+print(*[i for i in range(20,241) if i%20==0 or i%21==0])

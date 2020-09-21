@@ -1,14 +1,2 @@
-def my_func(x, y):
-    ib = x
-    for i in range(y - 1):
-        ib *= x
-    return ib
-
-
-def my_cheatin_func(x, y):
-    return x ** y
-
-
-a, b = int(input()), int(input())
-print(my_func(a, b))
-print(my_cheatin_func(a, b))
+sls= [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
+print(*[i for i in sls if sls.count(i)==1])
